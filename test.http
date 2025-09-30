@@ -1,0 +1,35 @@
+### POST member
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "email": "hello2@gmail.com",
+  "nickname": "hello",
+  "password":  "hello123",
+  "profileImageUrl": "hello.my.profile"
+}
+
+
+### POST course
+POST http://localhost:8080/api/courses
+Content-Type: application/json
+
+{
+  "title": "Spring Boot",
+  "category": "Programming",
+  "description": "아 즐거운 스프링 부트!"
+}
+
+
+### POST progress
+POST http://localhost:8080/api/progresses
+Content-Type: application/json
+
+{
+  "memberId": 1,
+  "courseId": 1
+}
+
+
+### GET member progresses
+GET http://localhost:8080/api/members/1/progresses
