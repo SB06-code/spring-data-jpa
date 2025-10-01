@@ -4,10 +4,9 @@ import codeit.sb06.springdatajpa.course.Course;
 import codeit.sb06.springdatajpa.course.CourseRepository;
 import codeit.sb06.springdatajpa.member.Member;
 import codeit.sb06.springdatajpa.member.MemberRepository;
-import codeit.sb06.springdatajpa.member.MemberService;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional

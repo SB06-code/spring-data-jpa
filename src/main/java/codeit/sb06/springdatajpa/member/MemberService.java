@@ -1,9 +1,9 @@
 package codeit.sb06.springdatajpa.member;
 
 import codeit.sb06.springdatajpa.progress.Progress;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
