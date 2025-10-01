@@ -3,7 +3,7 @@ POST http://localhost:8080/api/members
 Content-Type: application/json
 
 {
-  "email": "hello2@gmail.com",
+  "email": "hello1@gmail.com",
   "nickname": "hello",
   "password":  "hello123",
   "profileImageUrl": "hello.my.profile"
@@ -33,3 +33,18 @@ Content-Type: application/json
 
 ### GET member progresses
 GET http://localhost:8080/api/members/1/progresses
+
+
+### POST comment
+POST http://localhost:8080/api/comments
+Content-Type: application/json
+
+{
+  "memberId": 1,
+  "courseId": 1,
+  "content": "hello 1"
+}
+
+
+### GET course comments
+GET http://localhost:8080/api/courses/1/comments?page=0&size=5

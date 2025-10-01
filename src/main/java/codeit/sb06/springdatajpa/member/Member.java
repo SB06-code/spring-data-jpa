@@ -38,7 +38,7 @@ public class Member {
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    @OneToOne(mappedBy = "member", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "member", cascade = CascadeType.ALL)
     private MemberProfile memberProfile;
 
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
